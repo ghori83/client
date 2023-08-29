@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&family=Golos+Text&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+ @tailwind utilities; 
+
+ *{
+  font-family: 'Montserrat',sans-serif !important;
+ }
+
+ /* overrideing button style of antd */
+button {
+    border-radius: 0px !important; 
+    box-shadow: none !important;
+    height: 40px !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ input,textarea, select{
+  
+  min-height: 40px !important;
+  border: 2px solid rgb(114, 113, 113) !important;
+  border-radius: 2px !important;
+  width: 100% !important;
+ }
+ input:focus,textarea:focus{
+  outline: none !important;
+  box-shadow: none !important;
+ }
+
+ .ant-form-item{
+margin-bottom: 0 !important;
+ }
+
+a:hover{
+    text-decoration: underline !important;
+    color: 6a6a6a !important;
+}
+
+i{
+    font-size: 18px;
+}
+
+.ant-form-item-label{
+    padding: 0px !important;
+}
+table {
+    border: 1px solid #9f9f9f !important;
 }
